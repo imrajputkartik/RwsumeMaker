@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Downloader</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Professional Resume Downloader</h1>
+        <form id="resumeForm">
+            <!-- Personal Details -->
+            <div class="form-section">
+                <h2>Personal Details</h2>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+
+                <label for="image">Upload Profile Picture:</label>
+                <input type="file" id="image" name="image" accept="image/*">
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="form-section">
+                <h2>Social Media Profiles</h2>
+                <label for="instagram">Instagram:</label>
+                <input type="url" id="instagram" name="instagram" placeholder="https://instagram.com/username">
+
+                <label for="linkedin">LinkedIn:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/username">
+
+                <label for="github">GitHub:</label>
+                <input type="url" id="github" name="github" placeholder="https://github.com/username">
+            </div>
+
+            <!-- Education -->
+            <div class="form-section">
+                <h2>Education</h2>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" required>
+
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" name="institution" required>
+
+                <label for="year">Year:</label>
+                <input type="text" id="year" name="year" required>
+            </div>
+
+            <!-- Experience -->
+            <div class="form-section">
+                <h2>Experience</h2>
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" required>
+
+                <label for="position">Position:</label>
+                <input type="text" id="position" name="position" required>
+
+                <label for="duration">Duration:</label>
+                <input type="text" id="duration" name="duration" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+
+            <!-- Skills -->
+            <div class="form-section">
+                <h2>Skills</h2>
+                <textarea id="skills" name="skills" placeholder="Enter your skills..." required></textarea>
+            </div>
+
+            <!-- Hobbies -->
+            <div class="form-section">
+                <h2>Hobbies</h2>
+                <textarea id="hobbies" name="hobbies" placeholder="Enter your hobbies..."></textarea>
+            </div>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Resume Templates -->
+        <div id="resumeTemplates" style="display:none;">
+            <h2>Select Resume Template</h2>
+            <div class="template-grid">
+                <!-- Templates will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Include html2canvas library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
